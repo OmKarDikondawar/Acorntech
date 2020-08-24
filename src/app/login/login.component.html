@@ -1,0 +1,42 @@
+<div class="app-body">
+    <main class="main d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card-group">
+
+
+                        <div class="card p-4">
+                            <div class="card-body">
+
+                                <form (ngSubmit)="loginUser()">
+
+                                    <h1>Enter PIN</h1>
+                                  
+                                    <div class="input-group mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <mat-icon>lock</mat-icon>
+                                            </span>
+                                        </div>
+                                        <input [type]="visiblePassword ?'text':'password'" class="form-control" placeholder="Password"
+                                            name="password" [(ngModel)]="password" placeholder="Password"
+                                            autocomplete="current-password" required>
+                                          
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-primary px-4">Login</button>
+                                        </div>
+                           
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
